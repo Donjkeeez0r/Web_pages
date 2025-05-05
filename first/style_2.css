@@ -1,0 +1,201 @@
+/*Стили для секции под шапкой начало*/
+.main_head_background {
+    background: url(images/pushkin.svg);
+    width: 100%;
+    height: 364px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 88px;
+}
+
+/*стили для текста внутри карточки*/
+.name_rest {
+    padding: 10% 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*стили для цены внутри карточки*/
+.name_price_time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0.1rem 1rem;
+}
+
+/*фон для карточки*/
+.name_r {
+    background: white;
+}
+
+/*стили для времени внутри карточки*/
+.name_time {
+    color: white;
+    background: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 13px;
+}
+/*Стили для секции под шапкой конец*/
+
+
+/*Стили для меню начало*/
+
+.menu {
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(177, 177, 177, 0.596); /*серая раздеелительная полоса*/
+}
+
+/*стиль, чтобы меню было в строчку и между ними было расстояние*/
+.nav_alltext {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.nav_sub a {
+    color: #626262;
+    text-decoration: none;
+}
+
+.nav_sub a:hover {
+    color: green;
+}
+
+.nav_alltext {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+/*Стили для меню конец*/
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    display: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+a[href="#top"] {
+    position: fixed;
+    bottom: 24px; /*Отступ от нижнего края экрана — кнопка "всплывает" на 24px вверх*/
+    right: 16px; /*	Отступ от правого края экрана — кнопка на 16px слева от правого края*/
+    z-index: 999; /*Уровень наложения — делает кнопку поверх других элементов*/  
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    background: url(images/bg.svg);
+    width: 100%;
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.select-language.custom-size {
+    width: 228px;
+    height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.select-language {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #3B3B3B;
+    border-radius: 6px;
+}
+
+.select-language img {
+    width: 20px;
+    height: 20px;
+}
+
+.select-language select {
+    width: 100%;
+    height: 100%;
+    background: #3B3B3B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    padding-right: 15px; /* Уменьшаем отступ справа */
+}
+
+.hash {
+    color: green;
+}
+
+.tag {
+    color: white;
+}
+
+.alltext {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+}
+
+.footer-icons a {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-about a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.dlink {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/*Анимация для карточек начало*/
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация для изображения внутри карточки */
+.card img {
+    transition: transform 0.5s ease;
+}
+
+/* Увеличение картинки при наведении */
+.card:hover img {
+    transform: scale(1.1);
+}
+/*Анимация для карточек конец*/

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UberEats - Трактир "Пушкин"</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_2.css">
+
+</head>
+<body>
+    <a id="top"></a> <!--Якорь для кнопки-->
+
+    <!--Шапка начало-->
+    <header class="fixed-top">
+        <!--Добавление тени для навбара-->
+        <div class="shadow p-3 mb-5 bg-body rounded">
+
+            <!--Сам навбар-->
+            <nav class="navbar bg-white">
+
+                <!--Контейнер который выравнивает (лого слева, кнопки справа)-->
+                <div class="container d-flex justify-content-between align-items-center">
+                  
+                    <!-- Логотип -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="" width="120" height="13">
+                  </a>
+            
+                  <!-- Кнопка войти и кнопка корзины-->
+                  <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-outline-dark me-3"><b>Войти</b></button>
+                    <button type="button" class="btn btn-white">
+                        <img src="images/basket.svg" alt="Корзина" width="24" height="24">
+                    </button>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!--Шапка конец-->
+
+    <!--Секция под шапкой начало-->
+    <div class="main_head_background mask">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    
+                    <!--Карточка трактира-->
+                    <div class="name_r alltext mt-5">
+                        <p class="name_rest">Трактир «Пушкин»</p>
+                        <div class="name_price_time">
+                            <div class="name_price text-muted">₽₽₽ • Европейская</div>
+                            <div class="name_time">40 - 50 мин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Секция под шапкой конец-->
+
+    <!--Меню начало-->
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-0 col-md-10 col-lg-9">
+                    <nav class="nav_alltext">
+                        <div class="nav_sub me-2">
+                            <a href="">Закуски</a>
+                        </div>
+                        <div class="nav_sub me-2">
+                            <a href="">Салаты</a>
+                        </div>
+                        <div class="nav_sub me-2">
+                            <a href="">Супы</a>
+                        </div>
+                        <div class="nav_sub me-2">
+                            <a href="">Горячие блюды</a>
+                        </div>
+                        <div class="nav_sub me-2">
+                            <a href="">Гарниры</a>
+                        </div>
+                        <div class="nav_sub me-2">
+                            <a href="">Десерты</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Меню конец-->
+
+    <!--Основная часть начало-->
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <!-- Первая карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Сельдь на бородинском хлебе</h5>
+                                        <p class="card-text text-muted">С яйцом и огурцом</p>
+                                        <p class="card-text fw-bold">240 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Вторая карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Соленья ассорти</h5>
+                                        
+                                        <p class="card-text fw-bold">320 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo_2.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Третья карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Грибы маринованные</h5>
+                                        <p class="card-text fw-bold">300 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo_3.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Четвертая карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Сало домашнее с горчицей</h5>
+                                        <p class="card-text fw-bold">320 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo_4.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Пятая карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Малосольная семга</h5>
+                                        <p class="card-text fw-bold">390 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo_5.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Шестая карточка-->
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-4 mb-4">
+                    <a href="" class="text-decoration-none text-dark d-block w-100">
+                        <div class="card h-100">
+                            <!--Структура из 2х колонок-->
+                            <div class="row g-0 h-100">
+                                 <!--Левая часть карточки (текст)-->
+                                <div class="col-8">
+                                    <div class="card-body d-flex flex-column justify-content-between h-100">
+                                        <h5 class="card-title">Язык говяжий с хреном</h5>
+                                        <p class="card-text fw-bold">350 ₽</p>
+                                    </div>
+                                </div>
+                                <!--Правая часть карточки (картинка)-->
+                                <div class="col-4 d-flex align-items-stretch">
+                                    <img src="images/menu_2/photo_6.svg" class="img-fluid rounded-end w-100 object-fit-cover" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+                
+            </div>
+        </div>         
+    <!--Основная часть конец-->
+    
+    <!--Кнопка скролла наверх-->
+    <a href="#top" class="btn btn-succes" title="Наверх">
+        <img src="images/btn-up.svg" width="80px" height="80px">
+    </a>
+
+
+    <footer>
+        <div class="footer-container alltext">
+            <div class="container">
+                <div class="row">
+                    
+                    <!--Логотип в футере-->
+                    <div class="col-12">
+                        <div class="footer-logo mt-4">
+                            <a href="#">
+                                <img src="images/white-logo.svg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Разделительная полоса #1-->
+                    <div class="col-12">
+                        <div class="line mt-4">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!--Отдел с выбором языка и соц сетями-->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        
+                        <!--Выпадающий список для выбора языка-->
+                        <div class="select-language custom-size mt-4">
+                            <img src="images/world.svg">
+                            <select name="lang" id="lang">
+                                <option value="ru">Русский</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+
+                        <div class="footer-social">
+                            
+                            <!--Надпись #UberEats-->
+                            <div class="hashtag mt-4">
+                                <p>
+                                    <span class="hash">#</span>
+                                    <span class="tag">UberEats</span>
+                                </p>
+                            </div>
+
+                            <!--Иконки с социальными сетями-->
+                            <p class="footer-icons mt-4">
+                                <a href="">
+                                    <img src="images/facebook.svg">
+                                </a>
+                                <a href="">
+                                    <img src="images/twitter.svg">
+                                </a>
+                                <a href="">
+                                    <img src="images/instagram.svg">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Отдел с надписями #1-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="footer-about">
+                            <p>
+                                <a href="">Об UberEats</a>
+                            </p>
+                            <p>
+                                <a href="">Станьте партнёром по доставке</a>
+                            </p>
+                            <p>
+                                <a href="">Станьте парнёром-рестораном</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Отдел с надписями #2-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="footer-about">
+                            <p>
+                                <a href="">Все города</a>
+                            </p>
+                            <p>
+                                <a href="">Цены</a>
+                            </p>
+                            <p>
+                                <a href="">Помощь</a>
+                            </p>
+                            <p>
+                                <a href="">FAQs</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Разделительная полоса #2-->
+                    <div class="col-12 mt-4">
+                        <div class="line mt-4">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!--Отдел с иконками загрузки-->
+                    <div class="col-12">
+                        <div class="footer-download mt-4">
+                            <div class="dlink">
+                                <a href="">
+                                    <img src="images/Download_App_Store.svg">
+                                </a>
+                                <a href="">
+                                    <img src="images/Download_play_market.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!--Разделительная полоса #3-->
+                     <div class="col-12 mt-3">
+                        <div class="line mt-4">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <!--Надпись #1-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="footer-about">
+                            <p>
+                                <a href="">© 2017 Uber Technologies Inc.</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Надпись #2-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="footer-about">
+                            <p>
+                                <a href="">Обработка персональных данных</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Надпись #3-->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                        <div class="footer-about">
+                            <p>
+                                <a href="">Пользовательское соглашение</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
