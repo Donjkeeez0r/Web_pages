@@ -1,0 +1,264 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*блок в котором находится текст*/
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto; /*выравнивание по центру*/
+}
+
+/*Стили для шапки старт*/
+.header {
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between; /*выравнивание по краям блока*/
+    margin-top: 20px;
+}
+
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_items {
+    margin-right: 15px;
+}
+
+.header_item:last-child{
+    margin-right: 0;
+}
+
+.header_link {
+    font-size: 24px;
+    color: white;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.header_logo-pic {
+    width: 184px;
+    height: 45px;
+}
+
+/*Стили для шапки конец*/
+
+
+
+
+/*Стили для секции-2 начало*/
+.section-1 {
+    background: url(images/under_head_bg.png);
+    background-size: cover; /*покрывает все пространство*/
+    background-position: center; /*центрирует фон*/
+    width: 100%;
+    height: 403px;
+    padding-top: 80px;
+    display: flex;
+    align-items: center; /*Центрирует содержимое по вертикали внутри блока*/
+    justify-content: center; /*Центрирует содержимое по горизонтали*/
+}
+
+.section-title { /*стили для надписи*/
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-family: Roboto, sans-serif;
+}
+
+.section-2 {
+    background-color: white;
+    padding: 48px 0;
+}
+
+.problem-title {
+    color: #007765;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: bold; /*жирный текст*/
+}
+
+.problem-text {
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    color: black;
+}
+
+strong {
+    font-weight: bold;
+}
+/*Стили для секции-2 конец*/
+
+
+/*Стили для секции-3 начало*/
+
+.section-3 {
+    background: url(images/under_problem_bg.png);
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    height: 483px;
+}
+
+.section-3-text {
+    color: white;
+    max-width: 893px; /*макс длина блока где находится текст*/
+    font-size: 48px;
+    font-family: Roboto, sans-serif;
+    font-style: italic; /*курсив текста*/
+}
+
+/*Стили для секции-3 конец*/
+
+
+/*Стили для секции-4 начало*/
+
+.section-4 {
+    height: 520px;
+}
+
+.intro {
+    font-size: 64px;
+    font-family: Roboto, sans-serif;
+    color: #007765;
+    text-align: center;
+    margin-top: 48px;
+    font-weight: bold;
+}
+
+.intro-image {
+    width: 115px;
+    height: 115px;
+    margin-top: 16px;
+    margin-right: 48px;
+    float: left;
+}
+
+.PiedPiperCoin-text{
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    margin-top: 16px;
+
+}
+
+/*Стили для секции-4 начало*/
+
+
+/*Стили для секции-5 начало*/
+
+.section-5 {
+    background: url(images/team_bg.png);
+    background-size: cover;
+    background-position: center;
+    /*height: 845px;*/
+    padding-top: 58px;
+    padding-bottom: 112px; 
+}
+
+.team-intro {
+    font-size: 64px;
+    font-family: Roboto, sans-serif;
+    color: #007765;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px; /* ОТСТУП между надписью и фото */
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 121px; /* Отступы между колонками и строками */
+    padding: 0;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.foto {
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: 700; 
+    font-size: 24px; 
+    line-height: 28px; /*Задаёт высоту строки текста*/
+    color: #007765; 
+    text-align: center;
+    margin-top: 16px;
+}
+
+.role {
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/*Стили для секции-5 конец*/
+
+
+/*Стили для подвала старт*/
+
+.footer {
+    background: url(images/footer_bg.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    height: 176px;
+}
+
+.footer-text {
+    color: white;
+    max-width: 540px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+
+}
+
+
+
+/*Стили для подвала конец*/
